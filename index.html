@@ -567,6 +567,25 @@
       min-height: 48px;
     }
   </style>
+
+  <!-- Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '840826651159104');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=840826651159104&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel -->
 </head>
 <body>
 
@@ -582,7 +601,7 @@
       <h1>How Nigerians Are Making $300–$800 Weekly From a Platform That Doesn't Work Here</h1>
       <p class="subhead">If you have a family member or friend outside the country who can help you sign up on a website — you can start earning today. No technical skills needed.</p>
       <div class="cta-wrap">
-        <a href="#" class="cta-btn wa-link">Join the Free WhatsApp Class →</a>
+        <a href="#" class="cta-btn wa-link" onclick="fbq('track', 'Lead')" target="_blank">Join the Free WhatsApp Class →</a>
         <p class="social-proof">🔥 1,200+ Nigerians already joined this week</p>
       </div>
     </div>
@@ -700,7 +719,7 @@
     <div class="container">
       <h2>Your Family or Friend Outside the Country Is the Key — Join the Free Class and Learn Exactly What to Do</h2>
       <div class="cta-wrap">
-        <a href="#" class="cta-btn cta-btn--dark wa-link">Join the Free WhatsApp Class →</a>
+        <a href="#" class="cta-btn cta-btn--dark wa-link" onclick="fbq('track', 'Lead')" target="_blank">Join the Free WhatsApp Class →</a>
         <p class="urgency-note">This link closes once the group is full</p>
       </div>
     </div>
@@ -715,7 +734,7 @@
 
   <!-- Sticky mobile CTA -->
   <div class="sticky-cta">
-    <a href="#" class="cta-btn wa-link">Join Free WhatsApp Class →</a>
+    <a href="#" class="cta-btn wa-link" onclick="fbq('track', 'Lead')" target="_blank">Join Free WhatsApp Class →</a>
   </div>
 
   <script>

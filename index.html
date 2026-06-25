@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free WhatsApp Class — Earn $300–$800 Weekly</title>
+  <meta name="description" content="Learn how Nigerians are earning $300–$800 weekly from a geo-blocked platform — with help from a family member or friend outside the country. Free WhatsApp class.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="How Nigerians Are Making $300–$800 Weekly From a Platform That Doesn't Work Here">
+  <meta property="og:description" content="If you have a family member or friend outside the country who can help you sign up on a website — join the free WhatsApp class and learn the exact method.">
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
+  <meta property="og:url" content="https://yourdomain.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #0D3D2B;
+      --green-dark: #082a1e;
+      --gold: #F0A500;
+      --gold-hover: #d99400;
+      --bg: #F7F3EC;
+      --text: #1A1A1A;
+      --text-muted: #4a4a4a;
+      --red: #c0392b;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(13, 61, 43, 0.12);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 80px;
+    }
+
+    @media (min-width: 768px) {
+      body { padding-bottom: 0; }
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .container--wide {
+      max-width: 960px;
+    }
+
+    /* ── Top urgency bar ── */
+    .urgency-bar {
+      background: var(--red);
+      color: #fff;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .urgency-bar span {
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+    }
+
+    /* ── CTA Button ── */
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--gold);
+      color: var(--green-dark);
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      border-radius: 50px;
+      padding: 16px 32px;
+      min-height: 52px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(240, 165, 0, 0.35);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .cta-btn:hover {
+      background: var(--gold-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(240, 165, 0, 0.45);
+    }
+
+    .cta-btn:active { transform: translateY(0); }
+
+    .cta-btn--dark {
+      background: var(--gold);
+      color: var(--green-dark);
+    }
+
+    /* ── Fade-in on scroll ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 48px 0 40px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--green);
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 6vw, 44px);
+      color: var(--green);
+      margin-bottom: 20px;
+    }
+
+    .hero .subhead {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 32px;
+      line-height: 1.65;
+    }
+
+    .hero .cta-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .social-proof {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* ── Toggle block ── */
+    .toggle-section {
+      padding: 48px 0;
+    }
+
+    .toggle-section h2 {
+      text-align: center;
+      font-size: clamp(22px, 4.5vw, 30px);
+      color: var(--green);
+      margin-bottom: 32px;
+    }
+
+    .toggle-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    @media (min-width: 640px) {
+      .toggle-block {
+        flex-direction: row;
+        align-items: stretch;
+      }
+    }
+
+    .toggle-side {
+      flex: 1;
+      padding: 32px 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .toggle-side--blocked {
+      background: #fdecea;
+      border-bottom: 2px dashed #e0b4b0;
+    }
+
+    @media (min-width: 640px) {
+      .toggle-side--blocked {
+        border-bottom: none;
+        border-right: 2px dashed #e0b4b0;
+      }
+    }
+
+    .toggle-side--unlocked {
+      background: #e8f5ee;
+    }
+
+    .toggle-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+
+    .toggle-icon--lock { background: #f5c6c2; }
+    .toggle-icon--unlock { background: #a8d5ba; }
+
+    .toggle-label {
+      font-family: 'Syne', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .toggle-status {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .toggle-status--bad { color: #c0392b; }
+    .toggle-status--good { color: #1e7a4a; }
+
+    .toggle-bridge {
+      background: var(--green);
+      color: var(--gold);
+      text-align: center;
+      padding: 14px 20px;
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      position: relative;
+    }
+
+    @media (min-width: 640px) {
+      .toggle-bridge {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        border-radius: 50px;
+        padding: 10px 20px;
+        white-space: nowrap;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      }
+
+      .toggle-wrapper {
+        position: relative;
+      }
+    }
+
+    /* ── Learn section ── */
+    .learn-section {
+      padding: 48px 0;
+      background: #fff;
+    }
+
+    .learn-section h2 {
+      text-align: center;
+      font-size: clamp(22px, 4.5vw, 30px);
+      color: var(--green);
+      margin-bottom: 36px;
+    }
+
+    .learn-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .learn-grid {
+        flex-direction: row;
+        gap: 20px;
+      }
+    }
+
+    .learn-card {
+      flex: 1;
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 28px 22px;
+      text-align: center;
+      border: 1px solid rgba(13, 61, 43, 0.08);
+    }
+
+    .learn-icon {
+      font-size: 36px;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .learn-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .learn-card p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* ── Who this is for ── */
+    .who-section {
+      padding: 48px 0;
+    }
+
+    .who-section h2 {
+      text-align: center;
+      font-size: clamp(22px, 4.5vw, 30px);
+      color: var(--green);
+      margin-bottom: 32px;
+    }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 560px) {
+      .checklist {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .checklist .check-item--full {
+        grid-column: 1 / -1;
+      }
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      font-size: 15px;
+      line-height: 1.5;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .check-item .icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+    .check-item--no { background: #fafafa; color: var(--text-muted); border: 1px dashed #ccc; }
+
+    /* ── About ── */
+    .about-section {
+      padding: 48px 0;
+      background: #fff;
+    }
+
+    .about-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .profile-photo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green) 0%, #1a6b4a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: var(--gold);
+      flex-shrink: 0;
+      border: 3px solid var(--gold);
+    }
+
+    .about-section h2 {
+      font-size: clamp(20px, 4vw, 26px);
+      color: var(--green);
+    }
+
+    .about-section p {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ── Testimonials ── */
+    .testimonials-section {
+      padding: 48px 0;
+    }
+
+    .testimonials-section h2 {
+      text-align: center;
+      font-size: clamp(22px, 4.5vw, 30px);
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .replace-note {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      font-style: italic;
+      margin-bottom: 28px;
+    }
+
+    .testimonial-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    @media (min-width: 640px) {
+      .testimonial-grid {
+        flex-direction: row;
+        gap: 16px;
+      }
+    }
+
+    .testimonial-card {
+      flex: 1;
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--gold);
+    }
+
+    .testimonial-card .name {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .testimonial-card .quote {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    .testimonial-card .result {
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gold);
+    }
+
+    /* ── Final CTA ── */
+    .final-cta {
+      background: var(--green);
+      color: #fff;
+      padding: 56px 0;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(22px, 5vw, 32px);
+      color: var(--gold);
+      margin-bottom: 28px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .final-cta .cta-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .final-cta .urgency-note {
+      font-size: 14px;
+      color: rgba(255,255,255,0.75);
+      font-weight: 500;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--green-dark);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 20px 16px;
+      font-size: 13px;
+    }
+
+    /* ── Sticky mobile CTA bar ── */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      padding: 12px 16px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.12);
+      z-index: 99;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+      .sticky-cta { display: none; }
+    }
+
+    .sticky-cta .cta-btn {
+      max-width: 100%;
+      font-size: 16px;
+      padding: 14px 24px;
+      min-height: 48px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. TOP BAR -->
+  <div class="urgency-bar">
+    Free Class Closes in <span id="countdown">--:--:--</span>
+  </div>
+
+  <!-- 2. HERO -->
+  <section class="hero">
+    <div class="container fade-in">
+      <span class="eyebrow">Free WhatsApp Class</span>
+      <h1>How Nigerians Are Making $300–$800 Weekly From a Platform That Doesn't Work Here</h1>
+      <p class="subhead">If you have a family member or friend outside the country who can help you sign up on a website — you can start earning today. No technical skills needed.</p>
+      <div class="cta-wrap">
+        <a href="#" class="cta-btn wa-link">Join the Free WhatsApp Class →</a>
+        <p class="social-proof">🔥 1,200+ Nigerians already joined this week</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PROBLEM / SOLUTION TOGGLE -->
+  <section class="toggle-section">
+    <div class="container container--wide fade-in">
+      <h2>The Strategy in One Picture</h2>
+      <div class="toggle-wrapper">
+        <div class="toggle-block">
+          <div class="toggle-side toggle-side--blocked">
+            <div class="toggle-icon toggle-icon--lock">🔒</div>
+            <span class="toggle-label">The Platform</span>
+            <p class="toggle-status toggle-status--bad">❌ GEO-BLOCKED<br>IN NIGERIA</p>
+          </div>
+          <div class="toggle-bridge">That's the strategy →</div>
+          <div class="toggle-side toggle-side--unlocked">
+            <div class="toggle-icon toggle-icon--unlock">🔓</div>
+            <span class="toggle-label">Your Family or Friend Outside the Country</span>
+            <p class="toggle-status toggle-status--good">✅ FULL ACCESS<br>+ EARNINGS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. WHAT YOU'LL LEARN -->
+  <section class="learn-section">
+    <div class="container container--wide fade-in">
+      <h2>What You'll Learn in the Free Class</h2>
+      <div class="learn-grid">
+        <div class="learn-card">
+          <span class="learn-icon">💰</span>
+          <h3>The Platform</h3>
+          <p>Which platform it is and why it pays Nigerians so well — even though it's blocked here.</p>
+        </div>
+        <div class="learn-card">
+          <span class="learn-icon">🤝</span>
+          <h3>The Setup Method</h3>
+          <p>Exactly how your family member or friend outside the country helps you sign up and get started — step by step.</p>
+        </div>
+        <div class="learn-card">
+          <span class="learn-icon">🏦</span>
+          <h3>Getting Paid</h3>
+          <p>How to withdraw your earnings to Nigeria — in Naira or dollars — without stress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. WHO THIS IS FOR -->
+  <section class="who-section">
+    <div class="container fade-in">
+      <h2>Is This For You?</h2>
+      <div class="checklist">
+        <div class="check-item">
+          <span class="icon">✅</span>
+          <span>You have a family member or friend outside the country who can help you sign up on a website</span>
+        </div>
+        <div class="check-item">
+          <span class="icon">✅</span>
+          <span>You want a steady dollar income</span>
+        </div>
+        <div class="check-item">
+          <span class="icon">✅</span>
+          <span>You can follow simple instructions</span>
+        </div>
+        <div class="check-item check-item--no check-item--full">
+          <span class="icon">❌</span>
+          <span>NOT for people with no contact outside the country</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ABOUT / CREDIBILITY -->
+  <section class="about-section">
+    <div class="container fade-in">
+      <div class="about-inner">
+        <div class="profile-photo" aria-hidden="true">👤</div>
+        <h2>Who's Running This Class?</h2>
+        <p>This class is hosted by someone who has been running this for <strong>18 months</strong>. No fluff, no upsell in the class — just the exact steps to get set up and start earning. Real method, real results.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="container container--wide fade-in">
+      <h2>What People Are Saying</h2>
+      <p class="replace-note">[REPLACE WITH REAL TESTIMONIALS]</p>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p class="name">Chukwuemeka O. — Lagos</p>
+          <p class="quote">"Made ₦180k in my first 3 weeks. My cousin in London helped me sign up on the website. I couldn't believe how straightforward it was."</p>
+          <p class="result">~$220/week</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="name">Adaeze N. — Abuja</p>
+          <p class="quote">"My sister in Canada did the sign-up part. I handle everything else from here. Now I'm earning dollars every week while working my regular job."</p>
+          <p class="result">~$450/week</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="name">Ibrahim M. — Kano</p>
+          <p class="quote">"I was skeptical at first but the class showed me everything. My uncle in the US helped me get started. Best decision I made this year."</p>
+          <p class="result">~$380/week</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FINAL CTA -->
+  <section class="final-cta fade-in">
+    <div class="container">
+      <h2>Your Family or Friend Outside the Country Is the Key — Join the Free Class and Learn Exactly What to Do</h2>
+      <div class="cta-wrap">
+        <a href="#" class="cta-btn cta-btn--dark wa-link">Join the Free WhatsApp Class →</a>
+        <p class="urgency-note">This link closes once the group is full</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FOOTER -->
+  <footer>
+    <div class="container">
+      © 2025 · This is a free educational class · Results vary
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta">
+    <a href="#" class="cta-btn wa-link">Join Free WhatsApp Class →</a>
+  </div>
+
+  <script>
+    /* ── CONFIG: Edit your WhatsApp group invite link here ── */
+    const WHATSAPP_LINK = 'https://chat.whatsapp.com/DQFFe6uUE6pLAg9iRm9Odn?mode=gi_t';
+    const COUNTDOWN_HOURS = 48;
+    const STORAGE_KEY = 'landing_countdown_start';
+
+    /* ── WhatsApp links (all CTA buttons use WHATSAPP_LINK above) ── */
+    document.querySelectorAll('.wa-link').forEach(function (el) {
+      el.href = WHATSAPP_LINK;
+      el.setAttribute('target', '_blank');
+      el.setAttribute('rel', 'noopener noreferrer');
+    });
+
+    /* ── Countdown timer (persists via localStorage) ── */
+    (function () {
+      var stored = localStorage.getItem(STORAGE_KEY);
+      var startTime;
+
+      if (stored) {
+        startTime = parseInt(stored, 10);
+      } else {
+        startTime = Date.now();
+        localStorage.setItem(STORAGE_KEY, startTime.toString());
+      }
+
+      var endTime = startTime + COUNTDOWN_HOURS * 60 * 60 * 1000;
+      var el = document.getElementById('countdown');
+
+      function pad(n) {
+        return n < 10 ? '0' + n : String(n);
+      }
+
+      function tick() {
+        var remaining = endTime - Date.now();
+
+        if (remaining <= 0) {
+          el.textContent = '00:00:00';
+          return;
+        }
+
+        var hrs = Math.floor(remaining / 3600000);
+        var mins = Math.floor((remaining % 3600000) / 60000);
+        var secs = Math.floor((remaining % 60000) / 1000);
+
+        el.textContent = pad(hrs) + ':' + pad(mins) + ':' + pad(secs);
+        requestAnimationFrame(function () {
+          setTimeout(tick, 1000);
+        });
+      }
+
+      tick();
+    })();
+
+    /* ── Fade-in on scroll ── */
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.fade-in').forEach(function (el) {
+          el.classList.add('visible');
+        });
+        return;
+      }
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.fade-in').forEach(function (el) {
+        observer.observe(el);
+      });
+    })();
+  </script>
+</body>
+</html>
